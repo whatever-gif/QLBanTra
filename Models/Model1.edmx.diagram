@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6ea4b59e92864be3b25a361ad5d31555" Name="Diagram1">
+        <EntityTypeShape EntityType="QLBH_TRAModel.category" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBH_TRAModel.customer" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBH_TRAModel.feedback" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBH_TRAModel.order_details" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBH_TRAModel.order" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBH_TRAModel.product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBH_TRAModel.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="QLBH_TRAModel.FK__products__catego__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBH_TRAModel.FK__feedbacks__custo__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBH_TRAModel.FK__orders__customer__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBH_TRAModel.FK__order_det__order__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBH_TRAModel.FK__order_det__produ__5070F446" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

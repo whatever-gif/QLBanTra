@@ -1,0 +1,40 @@
+.imgBannerGT{
+    position: relative;
+}
+.imgBannerGT div{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-family: "SVN-Athena";
+    font-size: 3rem;
+    margin-left: 350px;
+}
+.imgBannerGT div span{
+    color: #aabc44;
+    font-size: 1.5rem;
+}
+#GT h1{
+    width: 100%;
+    text-align: center;
+    font-family: "SVN-Athena";
+    font-size: 3rem;
+}
+.contentGT p{
+    margin: 10px 0;
+    font-family: "SVN-Athena";
+    font-size: 1rem;
+}
+.imgContentGT{
+    margin: 50px 0;
+}
+
+@media (min-width:1700px){
+    .contentGT{
+        padding: 20px 500px;
+    }
+}
+@media only screen and (min-width:992px ) and (max-width: 1699.98px){
+    .contentGT{
+        padding: 20px 300px;
+    }
+}

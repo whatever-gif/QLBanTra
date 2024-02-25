@@ -1,0 +1,135 @@
+#bannerSP{
+    position: relative;
+}
+#bannerSP h1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-family: "SVN-Athena";
+    font-size: 60px;
+}
+#SP{
+    margin: 0 100px;
+}
+.infLink p{
+    color: #9b9b9b;
+    font-family: "SVN-Athena";
+    font-size: 18px;
+    padding: 20px 0;
+}
+#SP h1{
+    font-family: "SVN-Athena";
+    font-size: 60px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+}
+.chon {
+    display: flex;
+    justify-content: space-between;
+}
+.dropsx button{
+    color: #7a7a7a;
+    background-color: #fff;
+    border: none;
+    margin-top: 20px;
+    font-family: "SVN-Athena";
+    font-size: 18px;
+    display: block;
+}
+.dropsx{
+    position: relative;
+}
+.dropsx ul{
+    background-color: #fff;
+    position: absolute;
+    border: 1px solid #7a7a7a;
+}
+.dropsx li a{
+    color: #7a7a7a;
+    font-family: "SVN-Athena";
+    font-size: 18px;
+}
+.OptionT{
+    width: 35%;
+}
+.show{
+    top: 50%;
+    transform: translate(0,10%) !important;
+}
+.OptionT h3{
+    font-family: "SVN-Athena";
+    font-size: 1.5rem;
+}
+.OptionT label{
+    color: #7a7a7a;
+    font-family: "SVN-Athena";
+    font-size: 1rem;
+    line-height: 35px;
+}
+.OptionT p{
+    font-family: "SVN-Athena";
+    font-size: 18px;
+    color: #7a7a7a;
+}
+.sanpham{
+    display: flex;
+}
+.rate p{
+    color: #69922b;
+}
+.rate div{
+    background-color: #d4f59b;
+}
+.rate{
+    display: flex;
+    justify-content: space-between;
+}
+.priceSP select{
+    border: none;
+    background-color: rgba(0, 0,0,0);
+
+}
+.priceSP{
+    display: flex;
+    justify-content: center;
+}
+.titSP h3{
+    padding-top: 10px;
+    color: #7a7a7a;
+    font-family: "SVN-Athena";
+    font-size: 1.5rem;
+}
+.priceSP p{
+    font-family: "Roboto-Bold";
+    font-size: 1.5rem;
+    margin-top: 15px;
+
+}
+.priceSP small{
+    font-family: "Roboto-Regular";
+    font-size: 0.75rem;
+}
+#priceSelect {
+    font-size: 1.5rem;
+    font-family: "Roboto-Regular";
+    color: #7a7a7a;
+    padding-left: 10px;
+}
+.menuTT{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.menuTT a{
+    margin-left: 10px;
+    text-decoration: none;
+    border: 2px solid #c4c4c4;
+    text-align: center;
+    padding: 0 5px;
+    color: #000;
+}
+#footer{
+    margin-top: 50px;
+}

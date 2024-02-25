@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="icon" type="image/x-icon" href="~/Data/imgs/la.png">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Data/css/footer.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+    <link rel="stylesheet" href="~/Data/css/fonts.css">
+    <link rel="stylesheet" href="~/Data/css/head.css">
+</head>
+<body>
+    <head id="head">
+        <nav class="head navbar  navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="~/Data/imgs/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse w-100 justify-content-xxl-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            @Html.ActionLink("TRANG CHỦ", "Index", "Home", new { area = "" }, new { @class = "nav-link menu" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("GIỚI THIỆU", "GioiThieu", "GioiThieu", new { area = "" }, new { @class = "nav-link menu" })
+
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("SẢN PHẨM", "SanPham", "SanPham", new { area = "" }, new { @class = "nav-link menu" })
+
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("TIN TỨC", "TinTuc", "TinTuc", new { area = "" }, new { @class = "nav-link menu" })
+
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("LIÊN HỆ", "LienHe", "LienHe", new { area = "" }, new { @class = "nav-link menu" })
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </head>
+
+
+    <div class="">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="bgFooter">
+            <img class="w-100 h-100" src="~/Data/imgs/bgFooter.png" alt="">
+        </div>
+        <div class="Menufooter">
+            <div class="row">
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card1">
+                        <div class="card-body">
+                            <h5 class="card-title"><img src="~/Data/imgs/logo.png" alt=""></h5>
+                            <p style="padding-top: 20px;" class="card-text">7999&#183;999&#183;999</p>
+                            <p class="card-text">trasenbachdiep@gmail.com</p>
+                            <p class="card-text">Số 12, Quảng An, Hồ Tây, Hà Nội</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card1">
+                        <div class="card-body">
+                            <h5 style="padding: 20px 0px;" class="card-title">VỀ CHÚNG TÔI</h5>
+                            <p class="card-text">Giới thiệu</p>
+                            <p class="card-text">Sản phẩm</p>
+                            <p class="card-text">Tin Tức</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card1">
+                        <div class="card-body">
+                            <h5 style="padding: 20px 0px;" class="card-title">LIÊN HỆ</h5>
+                            <p class="card-text">
+                                <i class="bi bi-youtube"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-facebook"></i>
+                            </p>
+                            <p class="card-text">Copyright &#169; 2010-2020</p>
+                            <p class="card-text">Tra Sen Bach Diep. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <!-- nhúng thư viện js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="~/Data/js/bannerHome.js"></script>
+</body>
+</html>

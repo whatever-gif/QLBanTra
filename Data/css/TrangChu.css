@@ -1,0 +1,279 @@
+.neubat .h1spnb{
+    font-family: "SVN-Athena";
+    font-size: 48px;
+    margin-top: 150px;
+    position: relative;
+    text-align: center;
+}
+
+
+
+.contentBanner h1{
+    font-family: "SVN-Signature";
+    color: #43782b;
+    font-size: 8rem;
+}
+.contentBanner p{
+    font-family: "SVN-Athena";
+    width: 500px;
+    font-size: 1.125rem;
+}
+.btnHome{
+    font-family: "SVN-Athena";
+    padding: 10px 30px;
+    background-color: #aabc44;
+    border: none;
+    margin-top: 30px;
+}
+#banner{
+    position: relative;
+}
+
+
+/* sản phẩm nổi bật  */
+
+.contentBanner{
+    position: absolute;
+    top: 50%;
+    transform: translate(40%,-50%);
+}
+.contentBanner h2{
+    font-family: "SVN-Athena" ;
+    font-size: 2.25rem;
+}
+.neubat .imgspnb{
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    transform: translateY(-100%);
+}
+
+
+
+
+
+.imgsp p{
+    text-align: center;
+    font-family: "SVN-Athena" ;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+
+@media (min-width:1500px){
+    .spnb{
+        margin: 100px 300px;
+    }
+    .imgsp{
+        margin-left: 30px;
+    }
+    .ItemBackGround1{
+        width: 300px;
+    }
+
+    .mainIntro{
+        width: 540px;
+    }
+    .slick-prev{
+        top: 40%;
+    }
+    .slick-next{
+        top: 40%;
+    }
+
+    /* .workIntro{
+        transform: translate(30%, -230%);
+    }
+    .sdtIntro {
+        transform: translateY(-1100%);
+    } */
+    .tsbd h1{
+        font-size: 8rem !important;
+    } 
+    
+}
+@media only screen and (min-width:992px ) and (max-width: 1499.98px){
+
+    .spnb{
+        margin: 50px 150px;
+    }
+    .imgsp{
+        margin-left: 20px;
+    }
+    .ItemBackGround1{
+        width: 200px;
+    }
+
+    .mainIntro{
+        width: 450px;
+    }
+    .slick-prev{
+        top: 35%;
+    }
+    .slick-next{
+        top: 35%;
+    }
+    /* .workIntro{
+        transform: translate(30%, -150%);
+    }
+    .sdtIntro {
+
+        transform: translateY(-700%);
+    }*/ 
+   .tsbd h1{
+        font-size: 5rem !important;
+    } 
+}
+
+.ItemBackGround1 img{
+    position: relative;
+    z-index: -1;
+}
+
+.slick-prev{
+    position: absolute;
+
+    transform: translateY(-50%);
+    left: -5%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #a9bb45;
+    border: 1px solid #a9bb45;;
+}
+.slick-next{
+    position: absolute;
+    transform: translateY(-50%);
+    right: -5%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #a9bb45;
+    border: 1px solid #a9bb45;;
+}
+#product{
+    position: relative;
+}
+
+
+.workIntro{
+    transform: translate(20%,-80%);
+    top :50%
+}
+.ItemBackGround1{
+    position: absolute;
+}
+.imgIntro{
+    transform: translateY(-20%);
+}
+
+.contenIntro h1{
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    font-family: "SVN-Athena" ;
+    font-size: 3rem;
+    width: 100%;
+}
+.tsbd h1{
+    font-family: "SVN-Signature";
+    color: #43782b;
+
+}
+.mainIntro p {
+    font-family: "SVN-Athena" ;
+    font-size: 1.125rem;
+}
+.sdtIntro {
+    background-image: url("../imgs/sdtIntro.png");
+    background-repeat: no-repeat;
+    padding: 20px 100px;
+    position: absolute;
+    right: 0;
+}
+.sdtIntro p{
+    font-family: "Roboto-Bold";
+    font-size: 26.45px;
+    color: #aabc44;
+    font-weight: 550;
+}
+
+
+
+
+
+/* Athor */
+.titleAthor h1{
+    width: 100%;
+    text-align: center;   
+    margin-bottom: 30px;
+    font-family: "SVN-Athena" ;
+    font-size: 3rem;
+}
+.sdtIntro{
+    top: 0;
+    transform: translateY(80%);
+}
+#Athor{
+    background-image: url("../imgs/bgAthor.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.itemAthor div{
+    width: 225px;
+    height: 225px;
+    margin: 0.5rem;
+}
+.itemAthor h3{
+    font-family: "SVN-Athena" ;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.itemAthor p{
+    font-family: "SVN-Athena" ;
+    font-size: 14px;
+    text-align: center;
+    
+
+
+
+    /* Buy */
+}
+#BuyNow{
+    margin-top: 150px;
+}
+.formBuy h1{
+    text-align: center;
+    font-family: "SVN-Athena" ;
+    font-size: 3rem; 
+    padding: 30px;
+}
+
+
+.formButtom{
+    background-color: #aabc44;
+    margin-left: 50px !important;
+    border: none;
+    border-radius: 0;
+    padding: 10px 30px;
+    color: #000;
+}
+.formText{
+    border-radius: 0;
+    height: 50px;
+    border: #aabc44 2px solid;
+}
+.BuyNow{
+    position: relative;
+}
+.formBuy{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 400px;
+}
+

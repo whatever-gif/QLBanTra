@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* background-image: url('../imgs/backgroundHome.png');
+    z-index: 0; */
+}
+.menu{
+    font-family: "SVN-Athena";
+    font-weight: 18px;
+    color: #000;
+    padding-left: 5rem !important;
+    
+}
+.head{
+    background-color: #fff !important;
+}
+
+/* responsive */
+@media (min-width:1500px){
+    .container-fluid{
+        max-width: 1440px;
+    }
+
+   
+    
+
+}
+@media only screen and (min-width:992px ) and (max-width: 1499.98px){
+    .container-fluid{
+        max-width: 1200px;
+    }
+
+}
+ /* CSS banner  */
+/* banner */
+
+
+.slick-dots{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,200%);
+    display: flex !important;
+    gap: 0 20px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+.slick-dots li{
+    border: 2px solid #aabc44;
+    border-radius: 50%
+}
+.slick-dots button{
+    font-size: 0;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    outline: none;
+    margin: 8px;
+    background-color: #fff;
+}
+.slick-active button{
+    background-color: #aabc44;
+}

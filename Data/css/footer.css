@@ -1,0 +1,41 @@
+#footer{
+    position: relative;
+}
+.Menufooter{
+    position: absolute;
+    top: 0;
+    width: 100%;  
+    padding: 0px 200px;
+    padding-top: 30px;
+}
+.card{
+    border: none;
+    opacity: 100%;
+}
+.bgFooter{
+    height: 220px;
+}
+.card-body p{
+    white-space: nowrap;
+}
+
+@media (min-width:1500px){
+    /* .Menufooter{
+        padding: 0 400px;
+    } */
+    
+}
+@media only screen and (min-width:992px ) and (max-width: 1499.98px){
+
+}
+.card-body h5{
+    font-family: "SVN-Athena" ;
+    font-size: 1.5rem;
+}
+.card-body p{
+    font-family: "SVN-Athena" ;
+    font-size: 18px;
+}
+.card-text i{
+    width: 50px;
+}

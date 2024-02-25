@@ -1,0 +1,41 @@
+#bodyNew{
+    background-image: url('~/Data/imgs/bgNew.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.bodyNew{
+    display: flex;
+    justify-content: center;
+
+}
+.ItemNew div{
+    display: flex;
+    margin: 20px 30px;
+}
+.ItemNew div img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+.mgNew{
+    padding: 20px 200px;
+}
+.titNew{
+    width: 80%;
+}
+.titNew h1{
+    font-family: "SVN-Athena";
+    font-size: 3rem;
+    color: #899a29;
+}
+p{
+    font-family: "SVN-Athena";
+    font-size: 1rem;
+}
+.titNew img{
+    padding: 20px 0;
+}
+.hh1{
+    font-family: "SVN-Athena";
+    font-size: 1.5rem;
+}

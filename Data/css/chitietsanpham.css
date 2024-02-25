@@ -1,0 +1,61 @@
+.infLink p{
+    color: #9b9b9b;
+    font-family: "SVN-Athena";
+    font-size: 18px;
+    padding: 20px 0;
+}
+#CTSP1{
+    background-image: url('../imgs/bgCTSP1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.slideCTSP div{
+    width: 200px;
+    height: auto;
+}
+.BtnSL{
+    border-radius: 50%;
+    border: none;
+
+
+}
+.slideCTSP button img{
+    margin: 0;
+    padding: 0;
+}
+.slick-prev{
+    margin-left: 65px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #a9bb45;
+    border: 1px solid #a9bb45;
+    margin-bottom: 10px;
+}
+.slick-next{
+    margin-left: 60px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #a9bb45;
+    border: 1px solid #a9bb45;
+    margin-top: 10px;
+}
+.imageCTSP{
+    position: absolute;
+    width: 540px;
+}
+
+#CTSP1{
+    padding: 20px 100px; 
+}
+.tltAT{
+    font-family: "SVN-Athena";
+    font-size: 18px;
+}
+.ndCT p{
+    font-family: "SVN-Athena";
+    font-size: 1rem;
+}

@@ -1,0 +1,43 @@
+.ContentTintuc h1{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-family: "SVN-Athena";
+    font-size: 3rem;
+}
+#TinTuc{
+    background-image: url('../imgs/bgTinTuc.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.titleTinTuc{
+    padding: 0 320px;
+}
+.col img{
+    width: 100%;
+}
+.col h2{
+    /* font-family: "SVN-Athena"; */
+    font-size: 1.5rem;
+    color: #899a29;
+}
+.col p {
+    font-size: 14px;
+}
+.menuTT{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.menuTT a{
+    margin-left: 10px;
+    text-decoration: none;
+    border: 2px solid #c4c4c4;
+    text-align: center;
+    padding: 0 5px;
+    color: #000;
+}
+#footer{
+    margin-top: 50px;
+}

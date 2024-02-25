@@ -1,0 +1,145 @@
+﻿
+@{
+    ViewBag.Title = "PriceDESCSanPham";
+}
+
+
+@{
+    ViewBag.Title = "PriceASCSanPham";
+}
+
+
+@{
+    ViewBag.Title = "SanPham";
+}
+@model IEnumerable<QLBanTra.Models.product>
+<link rel="stylesheet" href="~/Data/css/sanpham.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<section id="bannerSP">
+    <div>
+        <img class="w-100" src="~/Data/imgs/bgBannerSP.png" alt="">
+    </div>
+    <div class="w-100">
+        <h1>SẢN PHẨM</h1>
+    </div>
+</section>
+
+<section id="SP">
+    <div class="infLink">
+        <p>Trang chủ > Sản phẩm</p>
+    </div>
+    <div>
+        <h1>Sản phẩm</h1>
+    </div>
+    <div class="chon">
+        <div class="infLink">
+            <p>Bộ lọc sản phẩm</p>
+        </div>
+
+        <div class="dropdown dropsx dropdown-menu-end">
+            <button class=" " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Giá trị mặc định <i class="bi bi-chevron-down"></i>
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li>@Html.ActionLink("Giá trị mặc định", "SanPham", "SanPham", new { area = "" }, new { @class = "nav-link dropdown-item" }) <i class="bi bi-chevron-down"></i></li>
+                <li>@Html.ActionLink("Giá thấp đến cao", "PriceASCSanPham", "SanPham", new { area = "" }, new { @class = "nav-link dropdown-item" })</li>
+                <li class="active">@Html.ActionLink("Giá cao đến thấp", "PriceDESCSanPham", "SanPham", new { area = "" }, new { @class = "nav-link dropdown-item active" })</li>
+                <li>@Html.ActionLink("Sắp xếp theo đánh giá", "SanPham", "SanPham", new { area = "" }, new { @class = "nav-link dropdown-item" })</li>
+                <li>@Html.ActionLink("Sắp xếp theo phổ biến", "SanPham", "SanPham", new { area = "" }, new { @class = "nav-link dropdown-item" })</li>
+            </ul>
+        </div>
+    </div>
+    <div class="sanpham">
+        <div class="OptionT">
+            <h3>Loại sản phẩm</h3>
+            <form style="margin-top: 50px;">
+                <input type="checkbox" id="TN" name="1" value="1">
+                <label for="1">Trà xanh Thái Nguyên</label><br>
+                <input type="checkbox" id="OL" name="2" value="2">
+                <label for="2">Trà Oo Long</label><br>
+                <input type="checkbox" id="ST" name="3" value="3">
+                <label for="3">Trà Shan tuyết</label><br>
+                <input type="checkbox" id="S" name="4" value="4">
+                <label for="4">Trà sen</label><br>
+                <input type="checkbox" id="L" name="5" value="5">
+                <label for="5">Trà lài</label><br>
+                <input type="checkbox" id="TD" name="6" value="6">
+                <label for="6">Trà thảo dược</label><br>
+                <input type="checkbox" id="Water" name="7" value="7">
+                <label for="7">Dụng cụ pha trà</label><br>
+                <input type="checkbox" id="IT" name="8" value="8">
+                <label for="8">Nước pha trà</label>
+            </form>
+            <h3 style="margin: 50px 0;">Giá thành</h3>
+            <form action="">
+                <div class="price-slider">
+                    <input type="range" class="custom-range" id="priceRange" min="50" max="200" step="1" value="50000">
+                    <p class="">Giá: <span id="priceValue">50</span>.000</p>
+                </div>
+                <label for="9">Từ 50.000 đến 200.000</label>
+            </form>
+            <h3 style="margin: 50px 0;">Thương hiệu</h3>
+            <input type="checkbox" id="IT" name="10" value="10">
+            <label for="10">Trà Tân Cương Xanh</label><br>
+            <input type="checkbox" id="Water" name="11" value="11">
+            <label for="11">Trà Sen Tây Hồ</label><br>
+            <input type="checkbox" id="IT" name="12" value="12">
+            <label for="12">Trà Lộc Tân</label>
+        </div>
+        <div class="container text-center">
+
+            <div class="row row-cols-3">
+
+                @foreach (var item in Model)
+                {
+
+                    <div class="col">
+                        <div class="rate">
+                            <p>&#9733;&#9733;&#9733;&#9733;&#9733;<span style="color: #7a7a7a;">(17)</span></p>
+                            <div><p style="color: black; margin: 0 15px; margin-top: 10px; font-size: 12px; font-family: 'SVN-Athena';">NEW</p></div>
+                        </div>
+                        <div class="imgSP">
+                            <img class="w-100" src="@Url.Content(item.image_path0)" alt="">
+                        </div>
+                        <div class="titSP">
+                            <h3>@Html.DisplayFor(modelItem => item.product_name)</h3>
+                        </div>
+                        <div class="priceSP">
+                            <p>
+                                <span class="pricevalueSP" data-value="50">@Html.DisplayFor(model => item.price)</span><span>0<small>VND</small></span>
+                            </p>
+                            <select name="" id="priceSelect1">
+                                <option value="50" selected>200</option>
+                                <option value="75">300g</option>
+                                <option value="100">400g</option>
+                            </select>
+                        </div>
+
+                    </div>
+                }
+
+            </div>
+            <div class="menuTT">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href=""><i class="bi bi-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Update the price value when the slider is changed
+    var priceRange = document.getElementById('priceRange');
+    var priceValue = document.getElementById('priceValue');
+
+    priceRange.addEventListener('input', function () {
+        priceValue.textContent = priceRange.value;
+    });
+</script>
+
+
